@@ -1,0 +1,12 @@
+---- MsgEncode Matches (11 in 4 files) ----
+Keymng_msg.c (src):int MsgEncode(
+Keymng_msg.c (src):		printf("func MsgEncode() err:%d check  (pStruct == NULL || type < 0 || outData == NULL || outLen == NULL)\n", ret);
+Keymng_msg.h (inc):int MsgEncode(
+Keymng_msg.h (inc):释放 MsgEncode( )函数中的outData; 方法：MsgMemFree((void **)outData, 0); 
+Keymng_msg.h (testmessagereal\incl):int MsgEncode(
+Keymng_msg.h (testmessagereal\incl):释放 MsgEncode( )函数中的outData; 方法：MsgMemFree((void **)outData, 0); 
+Testkeymngmsg.c (testmessagereal\src):	ret = MsgEncode(&msgKeyReq, ID_MsgKey_Req, &outData, &outLen);
+Testkeymngmsg.c (testmessagereal\src):		printf("func MsgEncode() err:%d \n", ret);
+Testkeymngmsg.c (testmessagereal\src):		printf("func MsgEncode() err:%d \n", ret);
+Testkeymngmsg.c (testmessagereal\src):	ret = MsgEncode(&t1, ID_MsgKey_Teacher, &myout, &outlen);
+Testkeymngmsg.c (testmessagereal\src):		printf("func MsgEncode() err:%d \n", ret);
